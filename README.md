@@ -1,6 +1,9 @@
 # Editline
 A fork from https://www.thrysoee.dk/editline/ modified to be built with CMake
 
+This is a BSD distribution of a library compatible with the GNU Readline library.
+A Windows version (WinEditLine) is available at: https://github.com/bgrieco/WinEditLine
+
 The source comes from libedit-20210910-3.1.tar.gz
 
 I added a .1 patch to the release number so that is differentiated from the original
@@ -40,7 +43,7 @@ and the build system should be able to figure things out for itself.
 Instead:
   - this configuration uses a config.h generated in Mac OS X. 
   - To circumvene this problem, some files were altered from the original (check the commits).
-- It does not work with windows. Check the WinEditLine project instead. (link will be updated)
+- It does not work with windows. Check the WinEditLine project instead : https://github.com/bgrieco/WinEditLine
 
 ## Updates and Releases
 Even though I ported EditLine to work with CMake, I have no intent in supporting it or updating it so that it matches the original version.
