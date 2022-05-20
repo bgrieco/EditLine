@@ -42,9 +42,9 @@ __RCSID("$NetBSD: unvis.c,v 1.44 2014/09/26 15:43:36 roy Exp $");
 
 #include <assert.h>
 #include <ctype.h>
-#ifdef HAVE_STDINT_H
+//#ifdef HAVE_STDINT_H
 #include <stdint.h>
-#endif
+//#endif
 #include <stdio.h>
 #include <errno.h>
 #include <vis.h>

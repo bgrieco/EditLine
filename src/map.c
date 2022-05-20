@@ -57,6 +57,11 @@ __RCSID("$NetBSD: map.c,v 1.54 2021/08/29 09:41:59 christos Exp $");
 #include "help.h"
 #include "parse.h"
 
+#include "terminal.h"
+#include "keymacro.h"
+#include "chared.h"
+
+
 static void	map_print_key(EditLine *, el_action_t *, const wchar_t *);
 static void	map_print_some_keys(EditLine *, el_action_t *, wint_t, wint_t);
 static void	map_print_all_keys(EditLine *);

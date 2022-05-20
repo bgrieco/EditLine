@@ -43,6 +43,8 @@ __RCSID("$NetBSD: literal.c,v 1.5 2019/07/23 13:10:11 christos Exp $");
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define __USE_XOPEN
+#include <wchar.h>
 #include "el.h"
 
 libedit_private void

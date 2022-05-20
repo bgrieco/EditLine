@@ -75,6 +75,10 @@ __RCSID("$NetBSD: terminal.c,v 1.44 2021/09/09 20:24:07 christos Exp $");
 #include "el.h"
 #include "fcns.h"
 
+#include "terminal.h"
+#include "keymacro.h"
+#include "el.h"
+#include "chared.h"
 /*
  * IMPORTANT NOTE: these routines are allowed to look at the current screen
  * and the current position assuming that it is correct.  If this is not
@@ -484,6 +488,12 @@ terminal_free_display(EditLine *el)
 	terminal_free_buffer(&el->el_vdisplay);
 }
 
+extern int tgetent(char *, const char *);
+extern int tgetflag(char *);
+extern int tgetnum(char *);
+extern int tputs(const char *, int, int (*)(int));
+extern char* tgoto(const char*, int, int);
+extern char* tgetstr(char*, char**);
 
 /* terminal_move_to_line():
  *	move to line <where> (first line == 0)

@@ -38,6 +38,8 @@ __RCSID("$NetBSD: chartype.c,v 1.35 2019/07/23 10:18:52 christos Exp $");
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
+#define __USE_XOPEN
+#include <wchar.h>
 
 #include "el.h"
 

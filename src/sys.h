@@ -110,7 +110,9 @@ typedef unsigned int	u_int32_t;
 #endif
 
 #ifndef HAVE_SIZE_MAX
+#ifndef SIZE_MAX
 #define SIZE_MAX	((size_t)-1)
+#endif
 #endif
 
 #define	REGEX		/* Use POSIX.2 regular expression functions */
