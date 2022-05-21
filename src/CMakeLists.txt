@@ -13,12 +13,12 @@ endmacro()
 set(HDRS vi.h emacs.h common.h)
 set(SRCS vi.c emacs.c common.c)
 
-generate( -h vi.h vi.c)
-generate( -h emacs.h emacs.c)
-generate( -h common.h common.c)
-generate( -fh fcns.h ${HDRS} )
-generate( -fc func.h ${HDRS} )
-generate( -bh help.h ${SRCS} )
+generate( -h  vi.h     vi.c    )
+generate( -h  emacs.h  emacs.c )
+generate( -h  common.h common.c)
+generate( -fh fcns.h   ${HDRS} )
+generate( -fc func.h   ${HDRS} )
+generate( -bh help.h   ${SRCS} )
 	
 add_library(edit STATIC 
 	chared.c 
